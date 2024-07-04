@@ -3,39 +3,38 @@ package UASPBO;
 public class Sendal {
     //Atribut dan Encapsulation
     protected String merk;
-    protected String ukuran;
+    protected int ukuran;
     protected double harga;
     
     //Methode Constructor
 
-    public Sendal(String merk, String ukuran, double harga) {
+    public Sendal(String merk, int ukuran, double harga) {
         this.merk = merk;
         this.ukuran = ukuran;
         this.harga = harga;
     }
-    
-    //Methode Accessor
 
-    public String getMerk() {
+    //Methode Accessor
+    public String getMerk() {    
         return merk;
     }
 
-    public String getUkuran() {
+    public int getUkuran() {
         return ukuran;
     }
+
 
     public double getHarga() {
         return harga;
     }
-    
-    
+
     //Mthode Mutatator
 
     public void setMerk(String merk) {
         this.merk = merk;
     }
 
-    public void setUkuran(String ukuran) {
+    public void setUkuran(int ukuran) {
         this.ukuran = ukuran;
     }
 
@@ -43,7 +42,8 @@ public class Sendal {
         this.harga = harga;
     }
     
-    public void tapil1(){
+    
+    public void tampil1(){
         System.out.println("Merk : "+merk);
         System.out.println("Ukuran : "+ukuran);
         System.out.println("Harga : "+harga);
