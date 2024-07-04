@@ -9,7 +9,7 @@ public class DataPenjualanSendal {
         Scanner input = new Scanner(System.in);
         
         //array untuk menyimpan data sendal
-        Sendal [] daftarSendal = new Sendal[2];
+        Sendal [] daftarSendal = new Sendal[3];
         
         //Looping untuk input data
         for(int i=0; i<daftarSendal.length; i++){
@@ -25,8 +25,8 @@ public class DataPenjualanSendal {
                 try{
                     System.out.print("Ukuran : ");
                     ukuran = input.nextInt();
-                    if (ukuran <= 10){
-                        throw new IllegalArgumentException("Ukuran Sendal Harus lebih Dari 10.");
+                    if (ukuran <= 6){
+                        throw new IllegalArgumentException("Ukuran Harus lebih Dari 10.");
                     }
                     ukuranValid = true;
                 }
@@ -46,8 +46,8 @@ public class DataPenjualanSendal {
              try{
                     System.out.print("Harga : ");
                     harga = input.nextDouble();
-                    if (harga <= 10000){
-                        throw new IllegalArgumentException("Harga Sendal Harus Lebih Dari 10000.");
+                    if (harga <= 5000){
+                        throw new IllegalArgumentException("Harga Harus Lebih Dari 100000.");
                     }
                     hargaValid = true;
                 }
@@ -61,7 +61,7 @@ public class DataPenjualanSendal {
                     }
             }   
             
-            System.out.print("Apakah Sendal Ini Untuk Mendaki? (Ya/Tidak)= ");
+            System.out.print("Apakah Sendal Ini digunakan untuk Mendaki? (Ya/Tidak)= ");
             String jenisMendaki = input.next();
             
             //Seleksi

@@ -1,5 +1,5 @@
 package UASPBO;
-
+//class
 public class Sendal {
     //Atribut dan Encapsulation
     protected String merk;
@@ -28,7 +28,7 @@ public class Sendal {
         return harga;
     }
 
-    //Mthode Mutatator
+    //Methode Mutatator
 
     public void setMerk(String merk) {
         this.merk = merk;
