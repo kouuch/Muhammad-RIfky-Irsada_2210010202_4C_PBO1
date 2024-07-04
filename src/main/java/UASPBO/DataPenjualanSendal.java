@@ -13,7 +13,7 @@ public class DataPenjualanSendal {
         
         //Looping untuk input data
         for(int i=0; i<daftarSendal.length; i++){
-            System.out.println("Data Sendal : "+ (i+1));
+            System.out.println("Data Sendal : "+ (i+1+1));
             System.out.print("Merk : ");
             String merk = input.next();
             
