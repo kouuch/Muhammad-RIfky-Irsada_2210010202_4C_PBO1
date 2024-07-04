@@ -26,7 +26,7 @@ public class DataPenjualanSendal {
                     System.out.print("Ukuran : ");
                     ukuran = input.nextInt();
                     if (ukuran <= 10){
-                        throw new IllegalArgumentException("Ukuran Sendal Harus lebih Dari 0.");
+                        throw new IllegalArgumentException("Ukuran Sendal Harus lebih Dari 10.");
                     }
                     ukuranValid = true;
                 }
@@ -46,8 +46,8 @@ public class DataPenjualanSendal {
              try{
                     System.out.print("Harga : ");
                     harga = input.nextDouble();
-                    if (harga <= 0){
-                        throw new IllegalArgumentException("Harga Sendal Harus Lebih Dari 10.");
+                    if (harga <= 10000){
+                        throw new IllegalArgumentException("Harga Sendal Harus Lebih Dari 10000.");
                     }
                     hargaValid = true;
                 }
@@ -61,7 +61,7 @@ public class DataPenjualanSendal {
                     }
             }   
             
-            System.out.print("Apakah Sepatu Ini Untuk Mendaki? (Ya/Tidak)= ");
+            System.out.print("Apakah Sendal Ini Untuk Mendaki? (Ya/Tidak)= ");
             String jenisMendaki = input.next();
             
             //Seleksi
