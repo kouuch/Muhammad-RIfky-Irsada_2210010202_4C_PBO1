@@ -10,5 +10,12 @@ public class SendalMendaki extends Sendal{
     }
     
     //Polymorphism(Overiding)
+
+    @Override
+    public void tampil1() {
+        super.tampil1();
+        System.out.println("Sendal Ini di Gunakan Untuk : "+jenisMendaki);
+    }
+    
     
 }
